@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.checkerboard {
+    background: #cccccc;
+    padding: 30px;
+}
+.checkboard__desk {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    border: 1px solid #fff;
+    box-shadow:inset 0px 0px 0px 2px #000;
+}
+.checkbord__letters {
+    flex-grow: 1;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+.checkbord__letters--upper .checkbord__letter,
+.checkbord__numbers--right .checkbord__number {
+    transform: rotate(180deg);
+}
+
+.checkbord__numbers {
+    flex-shrink: 1;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 20px;
+    flex-direction: column-reverse;
+    font-weight: bold;
+}
+.checkerboard__wrap {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    width: 400px;
+    border: 1px solid #000;
+}
+.checkboard__row {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.checkboard__field {
+    width: 12.5%;
+    /* border: 1px solid #000000; */
+}
+.checkboard__row:nth-child(odd) .checkboard__field:nth-child(even) {
+    background-color: #000;
+}
+.checkboard__row:nth-child(even) .checkboard__field:nth-child(odd) {
+    background-color: #000;
+}
+/* checkerboard2__wrap */
+.checkerboard2__wrap {
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    width: 400px;
+    border: 1px solid #000;
+}
+.checkerboard2__field {
+    width: 12.5%;
+}
+.checkerboard2__field:nth-child(n):nth-child(-n+8):nth-child(even) {
+    background-color: #000;
+}
+.checkerboard2__field:nth-child(n+9):nth-child(-n+16):nth-child(odd) {
+    background-color: #000;
+}
+.checkerboard2__field:nth-child(n+17):nth-child(-n+24):nth-child(even) {
+    background-color: #000;
+}
+.checkerboard2__field:nth-child(n+25):nth-child(-n+32):nth-child(odd) {
+    background-color: #000;
+}
+.checkerboard2__field:nth-child(n+33):nth-child(-n+40):nth-child(even) {
+    background-color: #000;
+}
+.checkerboard2__field:nth-child(n+41):nth-child(-n+48):nth-child(odd) {
+    background-color: #000;
+}
+.checkerboard2__field:nth-child(n+49):nth-child(-n+56):nth-child(even) {
+    background-color: #000;
+}
+.checkerboard2__field:nth-child(n+57):nth-child(-n+64):nth-child(odd) {
+    background-color: #000;
+}
