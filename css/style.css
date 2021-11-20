@@ -29,6 +29,7 @@
     display: flex;
     justify-content: space-evenly;
     font-weight: bold;
+    background-color: #fff;
 }
 .checkbord__letters--upper .checkbord__letter,
 .checkbord__numbers--right .checkbord__number {
@@ -46,6 +47,7 @@
     width: 20px;
     flex-direction: column-reverse;
     font-weight: bold;
+    background-color: #fff;
 }
 .checkerboard__wrap {
     flex-grow: 1;
@@ -54,6 +56,7 @@
     height: 400px;
     width: 400px;
     border: 1px solid #000;
+    background-color: #fff;
 }
 .checkboard__row {
     display: flex;
@@ -73,10 +76,12 @@
 /* checkerboard2__wrap */
 .checkerboard2__wrap {
     display: flex;
+    flex-grow: 1;
     flex-flow: row wrap;
     height: 400px;
     width: 400px;
     border: 1px solid #000;
+    background-color: #fff;
 }
 .checkerboard2__field {
     width: 12.5%;
